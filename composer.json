@@ -1,0 +1,10 @@
+{
+    "name": "fostercommerce/phpstan",
+    "minimum-stability": "dev",
+    "require": {
+        "craftcms/phpstan": "dev-main"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    }
+}
