@@ -1,5 +1,6 @@
-includes:
-    - ../../craftcms/phpstan/phpstan.neon
-
 parameters:
-    level: 0
+    ignoreErrors:
+        # Ignore errors PHPStan surfaces from missing a missing CustomFieldBehavior class
+        # TODO this is a bandaid and a solution should be found
+        - '#Access to an undefined property craft\\elements\\Entry\:\:.*$#'
+    level: 5
